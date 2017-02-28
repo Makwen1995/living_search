@@ -13,7 +13,6 @@ settings = Settings()
 settings.set("USER_AGENT", "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36")
 settings.set("ITEM_PIPELINES" , {
     'living_search.pipelines.DatabasePipeline': 300,
-'living_search.pipelines.JsonWithEncodingPipeline': 300,
 })
 data = [(0,'柯南',0),(1,'银魂',1)]
 runner = CrawlerRunner(settings)
